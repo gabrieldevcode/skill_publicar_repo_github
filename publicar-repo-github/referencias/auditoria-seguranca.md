@@ -2,6 +2,12 @@
 
 Referência da Fase 1 da skill `publicar-repo-github`.
 
+> **Esta auditoria é somente relatório.** A skill não altera código, config nem
+> `.gitignore` existentes (Regra 1). Todo trecho abaixo marcado como "Correção"
+> ou "Se um segredo já está no histórico" descreve o que **sugerir ao usuário
+> no aviso final** — só se aplica se ele pedir explicitamente depois. Em repo
+> privado a auditoria nem precisa rodar.
+
 Premissa: **o que entra no histórico do git é permanente.** `git rm` apaga o
 arquivo do próximo commit, não dos anteriores. Uma vez publicado, considere
 copiado — GitHub indexa, bots clonam, forks preservam. Por isso a auditoria
